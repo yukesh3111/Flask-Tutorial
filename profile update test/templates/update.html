@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{%block title%}update-profile{%endblock%}
+{%block content%}
+<form method="post" style="display: grid;justify-content: center;align-content: center;">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input type="text" class="form-control" name="Name" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">phone no</label>
+    <input type="number" class="form-control" name="Phone_no" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">User Name</label>
+    <input type="text" class="form-control" name="Username" aria-describedby="emailHelp" value="{{username}}" id="disabledInput">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{%endblock%}

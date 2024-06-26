@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <p>Now page is render by flask</p>
+    {%for i in content%}
+        {%if i=='partha'%}
+            <p>Hello {{i}} ☺</p>
+        {%elif i=='vasanth'%}
+            <p>Hello {{i}} ☺☺</p>
+        {%else%}
+            <p>Helo {{i}} ☺☺☺</p>
+        {%endif%}
+    {%endfor%}
+    <p>number is {{num}}</p>
+    <h1>For and if condition in html</h1>
+    {%for x in range(10)%}
+        {%if x%2==0%}
+            <p>even num is {{x}}</p>
+        {%endif%}
+    {%endfor%}
+</body>
+</html>
